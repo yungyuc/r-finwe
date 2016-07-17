@@ -1,0 +1,8 @@
+export FINWESRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+scenv="${FINWESRC}/solvcon/build/env"
+if [ -d $scenv ] ; then
+  source $scenv/start
+else
+  echo "SOLVCON not found at $scenv"
+fi
+# vim: set ff=unix fenc=utf8 nobomb ft=sh:
